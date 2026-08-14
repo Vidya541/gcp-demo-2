@@ -9,7 +9,7 @@ df = spark.read.format("bigquery") \
 .option("table",
 "project-df65380f-e50e-43c9-9b6.walmart_demo.sales") \
 .load()
-# Love from heart
+# Mr.sagar samal is very good in OA..
 df = df.withColumn(
 "total_sales",
 col("quantity")*col("price"))
