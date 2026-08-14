@@ -1,6 +1,10 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
 
+spark = SparkSession.builder \
+.appName("RetailETL") \
+.getOrCreate()
+# you are my kalala raju
 df = spark.read.format("bigquery") \
 .option("table",
 "project-df65380f-e50e-43c9-9b6.walmart_demo.sales") \
